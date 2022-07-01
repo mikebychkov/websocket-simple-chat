@@ -37,10 +37,10 @@
         function sendMessage() {
             var from = document.getElementById('from').value;
             var text = document.getElementById('text').value;
-             stompClient.send("/app/chat", {},
-                 JSON.stringify({'from':from, 'text':text}));
-             //stompClient.send("/topic/messages", {},
-             //    JSON.stringify({'from':from, 'text':text}));
+            stompClient.send("/app/chat", {},
+            JSON.stringify({'from':from, 'text':text}));
+            //stompClient.send("/topic/messages", {},
+            //JSON.stringify({'from':from, 'text':text}));
         }
 
         function showMessageOutput(messageOutput) {
